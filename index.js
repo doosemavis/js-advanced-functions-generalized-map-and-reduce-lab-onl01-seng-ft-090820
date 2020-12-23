@@ -1,4 +1,4 @@
-const map = function(arr, fns) {
+const map = (arr, fns) => {
     let newArr = []
     for (const element of arr) {
         newArr.push(fns(element))
@@ -6,7 +6,7 @@ const map = function(arr, fns) {
     return newArr;
 }
 
-const reduce = function(arr, fns, begin) {
+const reduce = (arr, fns, begin) => {
     let i = 1
     let total
     if (begin) {
